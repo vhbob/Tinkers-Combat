@@ -1,0 +1,72 @@
+# Thank you for purchasing Tinker's Combat!
+#
+# In this config you will be able to edit the basics of this plugin.
+# Creating your own augments will be discussed towards the end 
+#
+# Below is the prefix for all messages sent by this plugin
+prefix: '&8&L[&B&LTinkers Combat&8&L]'
+
+# This will control whether a sound will be played on certain events
+# and what that sound will be. Please use sounds from
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+sounds:
+  modify:
+    enabled: true
+    sound: BLOCK_ANVIL_USE
+
+# Here is what controls how many augments a certain item is allowed to hold. 
+# You can add different types of armor and weapons, and change the number of
+# sockets each have. Use this as a reference for materials:
+# https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+sockets:
+  armor:
+    ELYTRA: 4
+    IRON_BOOTS: 1
+    IRON_LEGGINGS: 2
+    IRON_CHESTPLATE: 2
+    IRON_HELMET: 1
+    DIAMOND_BOOTS: 2
+    DIAMOND_LEGGINGS: 3
+    DIAMOND_CHESTPLATE: 3
+    DIAMOND_HELMET: 2
+  weapon:
+    IRON_SWORD: 2
+    DIAMOND_SWORD: 3
+
+# This plugin relies on augments. Some are premade. You can create
+# custom ones by following the premade structure. 
+#
+# Each augment is stored in its own file for organizational purposes
+# In the TinkersCombat folder, there is a folder called augments. In that folder
+# there are two other folders, named weapons, and armor. Those folders contain the
+# files for augments of each specified type. 
+#
+# Each augment will have a recipe. They are made as follows:
+#
+# recipe:
+# 	format:
+#	  - 'XXX'
+#	  - 'XYX'
+# 	  - 'XXX'
+#   shaped: true
+#   items:
+#     X: 'DIAMOND'
+# 	  Y: 'NETHER_STAR'
+#
+# The above augment's recipe will be a nether star surrounded by diamonds
+# Please use: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html for materials
+#
+# Agments wil also have customizable effects.
+# For effects:
+# Armor augments will have effects for the wearer and
+# effects for anyone who attacks the wearer. Effects on the wearer are permanent while
+# the armor is equiped. For weapons, there are effects for the attacker, and the target.
+# Both of these effects are applied when the attacker attacks and hits. 
+# See premade augments for how to set these up. Please use this for effect types
+# Duration is the duration of the effect in seconds, level is the power of the potion effect
+# https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html 
+#
+# Finally, augments will have an item, which is the result of them being crafted. 
+# These are self-explanitory and can be seen in the example augments.
+# 
+# If you have any questions or issues please contact Vhbob on SpigotMC or MCMarket!

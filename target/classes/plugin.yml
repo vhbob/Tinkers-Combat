@@ -1,0 +1,8 @@
+name: TinkersCombat
+version: 0.1
+author: Vhbob
+description: This plugin allows players to add custom augmentations to their combat equipment
+main: com.vhbob.tinkerscombat.TinkersCombat
+version: 1.15.1
+api-version: 1.15
+depend: [ArmorEquipEvent]
